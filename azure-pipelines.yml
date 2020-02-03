@@ -21,6 +21,6 @@ steps:
   inputs:
     repository: $(imageName)
     command: build 
-    DockerFile: ./WebApplication2/DockerFile
+    DockerFile: app/DockerFile
 
 
