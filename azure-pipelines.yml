@@ -16,11 +16,9 @@ variables:
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
-- task: Docker@2 
-  displayName: Build an Image
+- task: Docker@2
   inputs:
-    repository: $(imageName)
-    command: build 
-    DockerFile: '**/Dockerfile'
+    command: 'build'
+    Dockerfile: '**/Dockerfile'
 
 
