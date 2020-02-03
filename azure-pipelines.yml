@@ -21,6 +21,6 @@ steps:
   inputs:
     repository: $(imageName)
     command: build 
-    DockerFile: app/DockerFile
+    DockerFile: '**/Dockerfile'
 
 
